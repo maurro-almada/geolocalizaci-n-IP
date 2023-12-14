@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de IP´s</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" .css">
+</head>
+
+<body>
+    <header>
+        <button id="topBoton">
+            <a href="https://rapidapi.com/Top-Rated/api/ip-reputation-geoip-and-detect-vpn/" target="_blank"
+                rel="noopener noreferrer">API Docs</a></button>
+    </header>
+    <h1>Geolocaliza la IP que buscas</h1>
+
+    <main class="container">
+        <form id="form">
+            <label>
+                <p>
+                    IP del Usuario</p>
+                <input required id="input" type="text" placeholder="Ingrese IP deseada">
+            </label>
+            <button type="submit" id="submit">
+                <p> Buscar IP</p>
+            </button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+        <div>
+            <pre id="results"></pre>
+        </div>
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
